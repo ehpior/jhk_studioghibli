@@ -8,9 +8,9 @@ body{
 	background-color:black;
 }
 .main{
-	background-image: url('main_background.jpg');
+	background-image: url('main_background2.png');
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size: cover;
 }
 table, th{
 	border-collapse: collapse;
@@ -31,11 +31,15 @@ a{
 	text-decoration : none;
 	color: white;
 }
+div th:hover {
+	background-color: grey;
+}
 </style>
 	</head>
-	<body text= white>	
-		<div id="main" class="main">
-			<table style="position:fixed ; top: 0px; left: 0px;" text-align=center;>
+	<body text= white>
+		<img id= "main" src="main_background2.png" width="100%" z-index="-1">
+		<div>
+			<table style="position:fixed ; top: 0px; left: 0px;" text-align=center; width="50%">
 				<th><a href="#main">메&nbsp;&nbsp;인</a></th>
 				<th><a href="#overview">개&nbsp;&nbsp;요</a></th>
 				<th><a href="#movie">작&nbsp;&nbsp;품</a></th>
@@ -43,10 +47,10 @@ a{
 				<th><a href="#years">연&nbsp;&nbsp;표</a></th>
 				<th><a href="#question">문&nbsp;&nbsp;의</a></th>
 			</table>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		</div>
-		<div id="overview"></div><br><br><br><br><br><br>
-		<table border="1" style="border-color: white; margin: auto;">
+			<br><br>
+		</div><br><br><br>
+		<div id = "overview"></div><br><br>
+		<table border="1" style="border-color: white; margin: auto;" width="50%">
 			<caption><h1>스튜디오 지브리의 개요</h1><br></caption>
 			<tr>
 				<th colspan ="2" style="text-align: center;">(주) 스튜디오 지브리<br>STUDIO GHIBLI INC.</th>
@@ -81,6 +85,39 @@ a{
 				</td>
 			</tr>
 		</table>
-		<br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div id="movie"></div><br><br>
+		<h1><center>스튜디오 지브리의 대표 작품</center></h1>
+		<br><br><br>
+		<p><details>
+			<summary>마루 밑 아리에티 (The Borrowers, 2010)</summary>
+			<img src="image/ariety.jpg">
+		</details></p>	
+		<p><details>
+			<summary>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</summary>
+			<img src="image/ponyo.jpg">
+		</details></p>
+		<p><details>
+			<summary>하울의 움직이는 성 (Howl's Moving Castle, 2004)</summary>
+			<img src="image/howl.jpg">
+		</details></p>
+		<p><details>
+			<summary>고양이의 보은 (The Cat Returns, 2002)</summary>
+			<img src="image/cat.jpg">
+		</details></p>
+		<p><details>
+			<summary>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</summary>
+			<img src="image/chihiro.jpg">
+		</details></p>
+		<p><details>
+			<summary>이웃집 토토로 (My Neighbor Totoro, 1988)</summary>
+			<img src="image/totoro.jpg">
+		</details></p>
+		<p><details>
+			<summary>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</summary>
+			<img src="image/laputa.jpg">
+		</details></p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 	</body>
 </html>
