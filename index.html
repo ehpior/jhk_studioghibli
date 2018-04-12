@@ -12,6 +12,9 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.input{
+	width:300px;
+}
 table, th{
 	border-collapse: collapse;
 	border: 1px solid white;
@@ -33,6 +36,11 @@ a{
 }
 div th:hover {
 	background-color: grey;
+}
+form{
+	display: block;
+	width: 300px;
+	margin: 0 auto;
 }
 </style>
 	</head>
@@ -117,7 +125,18 @@ div th:hover {
 			<summary>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</summary>
 			<img src="image/laputa.jpg">
 		</details></p>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="question"></div><br><br><br><br>
+		<form>
+			이름:<br><input type="text" name="name" class="input" required><br><br>
+			이메일 주소: <br><input type="email" name="email" class="input" required><br><br>
+			문의사항: <br><input type="radio" name="about" name="qna"> 기능개선요구
+			<br><input type="radio" name="qna"> 지브리관련문의
+			<br><input type="radio" name="qna"> 기타문의사항<br><br>
+			문의내용:<br><textarea name = "text" rows="7" cols="40" class="input"></textarea><br><br>
+			<button type="submit">제출하기</button>
+			<button type="reset">다시쓰기</button>
+		</form>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 	</body>
 </html>
