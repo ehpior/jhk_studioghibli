@@ -15,6 +15,9 @@ body{
 .input{
 	width:300px;
 }
+.clear{
+	clear:both;
+}
 table, th{
 	border-collapse: collapse;
 	border: 1px solid white;
@@ -29,6 +32,11 @@ th {
 	font-family: 'Jua', sans-serif;
 	font-size: 24px;
 	font-weight: normal;
+}
+td {
+	border: 1px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 a{
 	text-decoration : none;
@@ -58,7 +66,7 @@ form{
 			<br><br>
 		</div><br><br><br>
 		<div id = "overview"></div><br><br>
-		<table border="1" style="border-color: white; margin: auto;" width="50%">
+		<table border="1" style="border-color: white; margin: auto;" width="40%">
 			<caption><h1>스튜디오 지브리의 개요</h1><br></caption>
 			<tr>
 				<th colspan ="2" style="text-align: center;">(주) 스튜디오 지브리<br>STUDIO GHIBLI INC.</th>
@@ -97,35 +105,134 @@ form{
 		<div id="movie"></div><br><br>
 		<h1><center>스튜디오 지브리의 대표 작품</center></h1>
 		<br><br><br>
-		<p><details>
+		<div style="padding-left: 30px;"><p class="clear"><details>
 			<summary>마루 밑 아리에티 (The Borrowers, 2010)</summary>
-			<img src="image/ariety.jpg">
-		</details></p>	
-		<p><details>
+			<br><img style=" float: left;" src="image/ariety.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>마루 밑 아리에티 ( The Borrowers, 2010 )</td></tr>
+				<tr><th>감독</th>
+					<td>요네바야시 히로마사</td></tr>
+				<tr><th>개요</th>
+					<td>애니메이션, 판타지</td></tr>
+				<tr><th>개봉일</th>
+					<td>2010. 09. 09.</td></tr>
+				<tr><th>상영시간</th>
+					<td>94 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p></br>
+		<p class="clear"><details>
 			<summary>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</summary>
-			<img src="image/ponyo.jpg">
-		</details></p>
-		<p><details>
+			<br><img style=" float: left;" src="image/ponyo.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>벼랑 위의 포뇨 ( Ponyo On the Cliff, 2008 )</td></tr>
+				<tr><th>감독</th>
+					<td>미야자키 하야오</td></tr>
+				<tr><th>개요</th>
+					<td>모험, 가족, 애니메이션</td></tr>
+				<tr><th>개봉일</th>
+					<td>2008. 12. 17.</td></tr>
+				<tr><th>상영시간</th>
+					<td>100 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p><br>
+		<p class="clear"><details>
 			<summary>하울의 움직이는 성 (Howl's Moving Castle, 2004)</summary>
-			<img src="image/howl.jpg">
-		</details></p>
-		<p><details>
+			<br><img style=" float: left;" src="image/howl.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>하울의 움직이는 성 ( Howl's Moving Castle, 2004 )</td></tr>
+				<tr><th>감독</th>
+					<td>미야자키 하야오</td></tr>
+				<tr><th>개요</th>
+					<td>애니메이션, 판타지</td></tr>
+				<tr><th>개봉일</th>
+					<td>2004. 12. 23.</td></tr>
+				<tr><th>상영시간</th>
+					<td>119 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p><br>
+		<p class="clear"><details>
 			<summary>고양이의 보은 (The Cat Returns, 2002)</summary>
-			<img src="image/cat.jpg">
-		</details></p>
-		<p><details>
+			<br><img style=" float: left;" src="image/cat.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>고양이의 보은 ( The Cat Returns, 2002 )</td></tr>
+				<tr><th>감독</th>
+					<td>모리타 히로유키</td></tr>
+				<tr><th>개요</th>
+					<td>애니메이션, 모험, 판타지, 가족</td></tr>
+				<tr><th>개봉일</th>
+					<td>2003. 08. 08.</td></tr>
+				<tr><th>상영시간</th>
+					<td>75 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p><br>
+		<p class="clear"><details>
 			<summary>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</summary>
-			<img src="image/chihiro.jpg">
-		</details></p>
-		<p><details>
+			<br><img style=" float: left;" src="image/chihiro.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>센과 치히로의 행방불명 ( The Spiriting Away Of Sen And Chihiro, 2001 )</td></tr>
+				<tr><th>감독</th>
+					<td>미야자키 하야오</td></tr>
+				<tr><th>개요</th>
+					<td>애니메이션, 판타지, 모험, 가족</td></tr>
+				<tr><th>개봉일</th>
+					<td>2002. 06. 28.</td></tr>
+				<tr><th>상영시간</th>
+					<td>126 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p><br>
+		<p class="clear"><details>
 			<summary>이웃집 토토로 (My Neighbor Totoro, 1988)</summary>
-			<img src="image/totoro.jpg">
-		</details></p>
-		<p><details>
+			<br><img style=" float: left;" src="image/totoro.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>이웃집 토토로 ( My Neighbor Totoro, 1988 )</td></tr>
+				<tr><th>감독</th>
+					<td>미야자키 하야오</td></tr>
+				<tr><th>개요</th>
+					<td>애니메이션, 가족, 판타지</td></tr>
+				<tr><th>개봉일</th>
+					<td>2001. 07. 28.</td></tr>
+				<tr><th>상영시간</th>
+					<td>87 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p><br>
+		<p class="clear"><details>
 			<summary>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</summary>
-			<img src="image/laputa.jpg">
-		</details></p>
+			<br><img style=" float: left;" src="image/laputa.jpg"><br><br>
+			<table>
+				<tr><th>제목</th>
+					<td>천공의 성 라퓨타 ( Laputa: Castle In the Sky, 1986 )</td></tr>
+				<tr><th>감독</th>
+					<td>미야자키 하야오</td></tr>
+				<tr><th>개요</th>
+					<td>애니메이션, 판타지, 모험</td></tr>
+				<tr><th>개봉일</th>
+					<td>2004. 04. 30</td></tr>
+				<tr><th>상영시간</th>
+					<td>124 분</td></tr>
+				<tr><th>등급</th>
+					<td>전체 관람가</td></tr>
+			</table>
+		</details></p></div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="question"></div><br><br><br><br>
+		<center><h1>문의사항</h1></center><br><br>
 		<form>
 			이름:<br><input type="text" name="name" class="input" required><br><br>
 			이메일 주소: <br><input type="email" name="email" class="input" required><br><br>
@@ -138,5 +245,16 @@ form{
 		</form>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+		<div style="position: bottom; background-color: grey;">
+			<br>
+			<center>
+				<font color="black">Name : Jeong Hyun Ki<br>
+				ID-Number : 20133162<br>
+				Major : Electrical Engineering<br>
+				E-mail : gusrl0101@naver.com<br>
+				Class : Web Client Computting<br></font>
+			</center>
+			<br>
+		</div>
 	</body>
 </html>
