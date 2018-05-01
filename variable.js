@@ -1,3 +1,12 @@
-var class_name = "Web Client Computing";
-alert(class_name);
-console.log(class_name);
+var a = 9;
+var b = 5;
+
+console.log(a % b);
+
+console.log(a);
+console.log(a++);
+console.log(a);
+
+console.log(b);
+console.log(++b);
+console.log(b);

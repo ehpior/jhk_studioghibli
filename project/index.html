@@ -64,7 +64,7 @@ nav li a{
 	display: inline-block;
 	color: white;
 	font-weight:bold;
-	font-size: 18px;
+	font-size: 25px;
 	text-align: center;
 	padding: 15px 15px;
 	height: 20px;
@@ -109,7 +109,7 @@ section li{
 	<body text= white>
 		<img id="main" src="main_background2.png" width="100%" z-index="-1">
 		<nav>
-			<ul style="position:fixed ; top: 0 ; left: 0; width:100%;">
+			<ul style="position:fixed ; top: 0 ; left: 0; width:100%; height:11%;">
 				<li><a href="#main" style="padding:15px 15px; height:20px;"><img src="home.png" width="19px"></a></li>
 				<li><a href="#overview">개&nbsp;&nbsp;요</a></th>
 				<li><a href="#movie">작&nbsp;&nbsp;품</a></th>
@@ -356,14 +356,14 @@ section li{
 		<br><br><br><br><br><div id="question"></div><br><br><br>
 		<center><h1>문의사항</h1></center><br><br>
 		<form>
-			이름:<br><input type="text" name="name" class="input" required><br><br>
+			<h3>이름:<br><input type="text" name="name" class="input" required><br><br>
 			이메일 주소: <br><input type="email" name="email" class="input" required><br><br>
-			문의사항: <br><input type="radio" name="about" name="qna"> 기능개선요구
+			문의사항: </h3><h4><input type="radio" name="about" name="qna"> 기능개선요구
 			<br><input type="radio" name="qna"> 지브리관련문의
-			<br><input type="radio" name="qna"> 기타문의사항<br><br>
-			문의내용:<br><textarea name = "text" rows="7" cols="40" class="input"></textarea><br><br>
-			<button type="submit">제출하기</button>
-			<button type="reset">다시쓰기</button>
+			<br><input type="radio" name="qna"> 기타문의사항</h4>
+			<h3>문의내용:</h3><textarea name = "text" rows="7" cols="40" class="input"></textarea><br><br>
+			<button type="submit" style="font-size:15px;">제출하기</button>
+			<button type="reset" style="font-size:15px;">다시쓰기</button>
 		</form>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
