@@ -6,6 +6,7 @@
 <style>
 body{
 	background-color:black;
+	margin: 0;
 }
 .main{
 	background-image: url('main_background2.png');
@@ -51,21 +52,49 @@ form{
 	width: 300px;
 	margin: 0 auto;
 }
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+nav li{
+	display: inline;
+	font-family: arial, sans;
+}
+nav li a{
+	display: inline-block;
+	color: white;
+	font-weight:bold;
+	text-align: center;
+	padding: 15px 15px;
+	height: 20px;
+	text-decoration: none;
+}
+nav li a:hover{
+	background-color: #111;
+}
+span:hover{
+	background-color: green;
+}
 </style>
 	</head>
 	<body text= white>
 		<img id= "main" src="main_background2.png" width="100%" z-index="-1">
-		<div>
-			<table style="position:fixed ; top: 0px; left: 0px;" text-align=center; width="50%">
-				<th><a href="#main">메&nbsp;&nbsp;인</a></th>
-				<th><a href="#overview">개&nbsp;&nbsp;요</a></th>
-				<th><a href="#movie">작&nbsp;&nbsp;품</a></th>
-				<th><a href="#history">역&nbsp;&nbsp;사</a></th>
-				<th><a href="#years">연&nbsp;&nbsp;표</a></th>
-				<th><a href="#question">문&nbsp;&nbsp;의</a></th>
-			</table>
+		<nav>
+			<ul style="position:fixed ; top: 0 ; left: 0; width:100%;">
+				<!--<li><a href="#main">메&nbsp;&nbsp;인</a></th>-->
+				<li><a href="#main" style="padding:15px 15px; height:20px;"><img src="home.png" width="19px"></a></li>
+				<li><a href="#overview">개&nbsp;&nbsp;요</a></th>
+				<li><a href="#movie">작&nbsp;&nbsp;품</a></th>
+				<li><a href="#character">캐 릭 터</a></th>
+				<li><a href="#site">관련 사이트</a></th>
+				<li><a href="#question">문&nbsp;&nbsp;의</a></th>
+			</ul>
+		</nav>
 			<br><br>
-		</div><br><br><br>
+		<br><br><br>
 		<div id = "overview"></div><br><br>
 		<table border="1" style="border-color: white; margin: auto;" width="80%">
 			<caption><h1>스튜디오 지브리의 개요</h1><br></caption>
@@ -108,7 +137,7 @@ form{
 			<h3>(영화이름 Click!)</h3></center>
 		<br><br><br>
 		<div style="padding-left: 30px;"><p class="clear"><details>
-			<summary>마루 밑 아리에티 (The Borrowers, 2010)</summary>
+				<summary><span>마루 밑 아리에티 (The Borrowers, 2010)</span></summary>
 			<br><img style=" float: left;" src="image/ariety.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -126,7 +155,7 @@ form{
 			</table>
 		</details></p></br>
 		<p class="clear"><details>
-			<summary>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</summary>
+			<summary><span>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</span></summary>
 			<br><img style=" float: left;" src="image/ponyo.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -144,7 +173,7 @@ form{
 			</table>
 		</details></p><br>
 		<p class="clear"><details>
-			<summary>하울의 움직이는 성 (Howl's Moving Castle, 2004)</summary>
+			<summary><span>하울의 움직이는 성 (Howl's Moving Castle, 2004)</span></summary>
 			<br><img style=" float: left;" src="image/howl.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -162,7 +191,7 @@ form{
 			</table>
 		</details></p><br>
 		<p class="clear"><details>
-			<summary>고양이의 보은 (The Cat Returns, 2002)</summary>
+			<summary><span>고양이의 보은 (The Cat Returns, 2002)</span></summary>
 			<br><img style=" float: left;" src="image/cat.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -180,7 +209,7 @@ form{
 			</table>
 		</details></p><br>
 		<p class="clear"><details>
-			<summary>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</summary>
+			<summary><span>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</span></summary>
 			<br><img style=" float: left;" src="image/chihiro.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -198,7 +227,7 @@ form{
 			</table>
 		</details></p><br>
 		<p class="clear"><details>
-			<summary>이웃집 토토로 (My Neighbor Totoro, 1988)</summary>
+			<summary><span>이웃집 토토로 (My Neighbor Totoro, 1988)</span></summary>
 			<br><img style=" float: left;" src="image/totoro.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -216,7 +245,7 @@ form{
 			</table>
 		</details></p><br>
 		<p class="clear"><details>
-			<summary>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</summary>
+			<summary><span>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</span></summary>
 			<br><img style=" float: left;" src="image/laputa.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
@@ -233,7 +262,11 @@ form{
 					<td>전체 관람가</td></tr>
 			</table>
 		</details></p></div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="question"></div><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><div id="character"><br><br>
+		<center><h1>스튜디오 지브리의 대표 캐릭터</h1></center>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="site"></div><br><br>
+		<center><h1>관련 사이트</h1></center><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="question"></div><br><br>
 		<center><h1>문의사항</h1></center><br><br>
 		<form>
 			이름:<br><input type="text" name="name" class="input" required><br><br>
