@@ -11,9 +11,6 @@ body{
 .input{
 	width:300px;
 }
-.clear{
-	clear:both;
-}
 table, th{
 	border-collapse: collapse;
 	border: 1px solid white;
@@ -48,6 +45,10 @@ nav ul{
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
+	position:fixed;
+	top: 0;
+	left: 0; 
+	width:100%;
 }
 nav li{
 	display: inline;
@@ -64,10 +65,10 @@ nav li a{
 nav li a:hover{
 	background-color: #111;
 }
-span:hover{
+#movie span:hover{
 	background-color: green;
 }
-span.character{
+#character span{
 	background-color: #111;
 	display: inline-block;
 	width:23%;
@@ -77,7 +78,7 @@ span.character{
 	font-family: 'Jua', sans-serif;
 	text-align: center;
 }
-img.character{
+#character img{
 	width: 100%;
 	height: 230px;
 }
@@ -87,20 +88,34 @@ h3 {
 h4 {
 	font-weight: normal;
 }
-section a{
+#overview td{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#movie img{
+	float:left;
+	margin-right:40px;
+	margin-bottom: 50px;
+}
+#movie details{
+	margin-left:150px;
+	margin-top:50px;
+	clear:both;
+}
+#site a{
 	text-decoration: underline;
 	color: #5B5AFF;
 }
-section li{
+#site li{
 	margin-bottom: 60px;
 	margin-left: 100px;
 }
 </style>
 	</head>
 	<body text="white">
-		<img id="main" style="padding-top: 50px" src="main_background2.png" width="100%" z-index="-1">
+		<img id="main" style="padding-top: 50px" src="main_background2.png" width="100%">
 		<nav>
-			<ul style="position:fixed ; top: 0 ; left: 0; width:100%;">
+			<ul>
 				<li><a href="#main" style="padding:15px 15px;"><img src="home.png" height="22px"></a></li>
 				<li><a href="#overview">개&nbsp;&nbsp;요</a></th>
 				<li><a href="#movie">작&nbsp;&nbsp;품</a></th>
@@ -110,7 +125,7 @@ section li{
 			</ul>
 		</nav>
 		<br><br><br><br><br>
-		<div id = "overview"></div><br><br><br>
+		<div id = "overview"><br><br><br>
 		<table border="1" style="border-color: white; margin: auto;" width="60%">
 			<caption><h1>스튜디오 지브리의 개요</h1><br></caption>
 			<tr>
@@ -118,25 +133,25 @@ section li{
 			</tr>
 			<tr>
 				<th>설 립</th>
-				<td style="padding-left: 20px">1985년 6월</td>
+				<td>1985년 6월</td>
 			</tr>
 			<tr>
 				<th>위 치</th>
-				<td style="padding-left: 20px">일본 도쿄도 고가네이 시</td>
+				<td>일본 도쿄도 고가네이 시</td>
 			</tr>
 			<tr>
 				<th rowspan="3">대 표</th>
-				<td style="padding-left: 20px">회장 호시노 코우지</td>
+				<td>회장 호시노 코우지</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 20px">사장 나카지마 키요후미</td>
+				<td>사장 나카지마 키요후미</td>
 			</tr>
 			<tr>
-				<td style="padding-left: 20px">프로듀서 스즈키 토시오</td>
+				<td>프로듀서 스즈키 토시오</td>
 			</tr>
 			<tr>
 				<th>내 용</th>
-				<td style="padding-right: 20px">
+				<td style="padding-left: 0px;">
 					<ul>
 						<li>애니메이션 영화, TV, 다큐멘터리 등의 기획 및 제작</li>
 						<li>애니메이션의 각종 캐릭터 상품화</li>
@@ -146,14 +161,15 @@ section li{
 				</td>
 			</tr>
 		</table>
+		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<div id="movie"></div><br><br><br>
+		<div id="movie"><br><br><br>
 		<center><h1>스튜디오 지브리의 대표 작품</h1>
 			<h3>(영화이름 Click!)</h3></center>
-		<br><br><br>
-		<div style="padding-left: 30px;"><p class="clear"><details style="margin-left:100px;">
+		<br>
+		<details>
 				<summary><span>마루 밑 아리에티 (The Borrowers, 2010)</span></summary>
-			<br><img style="float:left; margin-right:40px;" src="image/ariety.jpg">
+			<br><img src="image/ariety.jpg">
 			<table>
 				<tr><th>제목</th>
 					<td>마루 밑 아리에티<br>( The Borrowers, 2010 )</td></tr>
@@ -174,10 +190,10 @@ section li{
 						자신만의 방식으로 열심히 살아가고 있다는<br>
 						메시지를 담고 있는 애니메이션</td></tr>
 			</table>
-			</details></p>
-		<p class="clear"><details style="margin-left:100px; margin-top:50px;">
+			</details>
+		<details>
 			<summary><span>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</span></summary>
-			<br><img style="float: left; margin-right:40px;" src="image/ponyo.jpg"><br><br>
+			<br><img src="image/ponyo.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
 					<td>벼랑 위의 포뇨<br>( Ponyo On the Cliff, 2008 )</td></tr>
@@ -195,10 +211,10 @@ section li{
 					<td>전체 관람가</td></tr>
 				<tr><th>줄거리</th>
 			</table>
-		</details></p>
-		<p class="clear"><details style="margin-left:100px; margin-top:50px;">
+		</details>
+		<details>
 			<summary><span>하울의 움직이는 성 (Howl's Moving Castle, 2004)</span></summary>
-			<br><img style="float: left; margin-right:40px;" src="image/howl.jpg"><br><br>
+			<br><img src="image/howl.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
 					<td>하울의 움직이는 성<br>( Howl's Moving Castle, 2004 )</td></tr>
@@ -215,10 +231,10 @@ section li{
 				<tr><th>등급</th>
 					<td>전체 관람가</td></tr>
 			</table>
-		</details></p>
-		<p class="clear"><details style="margin-left:100px; margin-top:50px;">
+		</details>
+		<details>
 			<summary><span>고양이의 보은 (The Cat Returns, 2002)</span></summary>
-			<br><img style="float: left; margin-right:40px;" src="image/cat.jpg"><br><br>
+			<br><img src="image/cat.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
 					<td>고양이의 보은<br>( The Cat Returns, 2002 )</td></tr>
@@ -235,10 +251,10 @@ section li{
 				<tr><th>등급</th>
 					<td>전체 관람가</td></tr>
 			</table>
-		</details></p>
-		<p class="clear"><details style="margin-left:100px; margin-top:50px;">
+		</details>
+		<details>
 			<summary><span>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</span></summary>
-			<br><img style="float: left; margin-right:40px;" src="image/chihiro.jpg"><br><br>
+			<br><img src="image/chihiro.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
 					<td>센과 치히로의 행방불명<br>( The Spiriting Away Of Sen And Chihiro, 2001 )</td></tr>
@@ -255,10 +271,10 @@ section li{
 				<tr><th>등급</th>
 					<td>전체 관람가</td></tr>
 			</table>
-		</details></p>
-		<p class="clear"><details style="margin-left:100px; margin-top:50px;">
+		</details>
+		<details>
 			<summary><span>이웃집 토토로 (My Neighbor Totoro, 1988)</span></summary>
-			<br><img style="float: left; margin-right:40px;" src="image/totoro.jpg"><br><br>
+			<br><img src="image/totoro.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
 					<td>이웃집 토토로<br>( My Neighbor Totoro, 1988 )</td></tr>
@@ -275,10 +291,10 @@ section li{
 				<tr><th>등급</th>
 					<td>전체 관람가</td></tr>
 			</table>
-		</details></p>
-		<p class="clear"><details style="margin-left:100px; margin-top:50px;">
+		</details>
+		<details>
 			<summary><span>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</span></summary>
-			<br><img style="float: left; margin-right:40px;" src="image/laputa.jpg"><br><br>
+			<br><img src="image/laputa.jpg"><br><br>
 			<table>
 				<tr><th>제목</th>
 					<td>천공의 성 라퓨타<br>( Laputa: Castle In the Sky, 1986 )</td></tr>
@@ -295,32 +311,33 @@ section li{
 				<tr><th>등급</th>
 					<td>전체 관람가</td></tr>
 			</table>
-		</details></p></div>
+		</details>
+		</div>
 		<br><br><br><br><br><br><br><br><br><div id="character"><br><br><br>
 		<center><h1>스튜디오 지브리의 대표 캐릭터</h1></center><br><br>
-		<span class= "character"><img src="image/아리에티.jpg" class="character"><h3>아 리 에 티</h3><h4>(in 마루 밑 아리에티)</h4></span>
-		<span class= "character"><img src="image/시즈쿠.jpg" class="character"><h3>시 즈 쿠</h3><h4>(in 귀를 기울이면)</h4></span>
-		<span class= "character"><img src="image/카자마슌.jpg" class="character"><h3>카 자 마&nbsp; 슌</h3><h4>(in 코쿠리코 언덕에서)</h4></span>
-		<span class= "character"><img src="image/유바바.jpg" class="character"><h3>유 바 바</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span class= "character"><img src="image/소스케.jpg" class="character"><h3>소 스 케</h3><h4>(in 벼랑 위의 포뇨)</h4></span>
-		<span class= "character"><img src="image/메이.jpg" class="character"><h3>메 이</h3><h4>(in 이웃집 토토로)</h4></span>
-		<span class= "character"><img src="image/바론남작.jpg" class="character"><h3>바 론&nbsp; 남 작</h3><h4>(in 고양이의 보은)</h4></span>
-		<span class= "character"><img src="image/아시타카.jpg" class="character"><h3>아 시 타 카</h3><h4>(in 모노노케 히메)</h4></span>
-		<span class= "character"><img src="image/가오나시.jpg" class="character"><h3>가 오 나 시</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span class= "character"><img src="image/소피.jpg" class="character"><h3>소 피</h3><h4>(in 하울의 움직이는 성)</h4></span>
-		<span class= "character"><img src="image/산.jpg" class="character"><h3>산</h3><h4>(in 모노노케 히메)</h4></span>
-		<span class= "character"><img src="image/포르코롯소.jpg" class="character"><h3>포 르 코&nbsp; 롯 소</h3><h4>(in 붉은 돼지)</h4></span>
-		<span class= "character"><img src="image/파즈.jpg" class="character"><h3>파 즈</h3><h4>(in 천공의 성 라퓨타)</h4></span>
-		<span class= "character"><img src="image/하울.jpg" class="character"><h3>하 울</h3><h4>(in 하울의 움직이는 성)</h4></span>
-		<span class= "character"><img src="image/포뇨.jpg" class="character"><h3>포 뇨</h3><h4>(in 벼랑 위의 포뇨)</h4></span>
-		<span class= "character"><img src="image/센.jpg" class="character"><h3>센 (치 히 로)</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span class= "character"><img src="image/하쿠.jpg" class="character"><h3>하 쿠</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span class= "character"><img src="image/키키.jpg" class="character"><h3>키 키</h3><h4>(in 마녀 배달부 키키)</h4></span>
-		<span class= "character"><img src="image/나우시카.jpg" class="character"><h3>나 우 시 카</h3><h4>(in 바람계곡의 나우시카)</h4></span>
-		<span class= "character"><img src="image/토토로.jpg" class="character"><h3>토 토 로</h3><h4>(in 이웃집 토토로)</h4></span>
-		<br><br><br><br><br><div id="site"></div><br><br><br>
+		<span><img src="image/아리에티.jpg"><h3>아 리 에 티</h3><h4>(in 마루 밑 아리에티)</h4></span>
+		<span><img src="image/시즈쿠.jpg"><h3>시 즈 쿠</h3><h4>(in 귀를 기울이면)</h4></span>
+		<span><img src="image/카자마슌.jpg"><h3>카 자 마&nbsp; 슌</h3><h4>(in 코쿠리코 언덕에서)</h4></span>
+		<span><img src="image/유바바.jpg"><h3>유 바 바</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
+		<span><img src="image/소스케.jpg"><h3>소 스 케</h3><h4>(in 벼랑 위의 포뇨)</h4></span>
+		<span><img src="image/메이.jpg"><h3>메 이</h3><h4>(in 이웃집 토토로)</h4></span>
+		<span><img src="image/바론남작.jpg"><h3>바 론&nbsp; 남 작</h3><h4>(in 고양이의 보은)</h4></span>
+		<span><img src="image/아시타카.jpg"><h3>아 시 타 카</h3><h4>(in 모노노케 히메)</h4></span>
+		<span><img src="image/가오나시.jpg"><h3>가 오 나 시</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
+		<span><img src="image/소피.jpg"><h3>소 피</h3><h4>(in 하울의 움직이는 성)</h4></span>
+		<span><img src="image/산.jpg"><h3>산</h3><h4>(in 모노노케 히메)</h4></span>
+		<span><img src="image/포르코롯소.jpg"><h3>포 르 코&nbsp; 롯 소</h3><h4>(in 붉은 돼지)</h4></span>
+		<span><img src="image/파즈.jpg"><h3>파 즈</h3><h4>(in 천공의 성 라퓨타)</h4></span>
+		<span><img src="image/하울.jpg"><h3>하 울</h3><h4>(in 하울의 움직이는 성)</h4></span>
+		<span><img src="image/포뇨.jpg"><h3>포 뇨</h3><h4>(in 벼랑 위의 포뇨)</h4></span>
+		<span><img src="image/센.jpg"><h3>센 (치 히 로)</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
+		<span><img src="image/하쿠.jpg"><h3>하 쿠</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
+		<span><img src="image/키키.jpg"><h3>키 키</h3><h4>(in 마녀 배달부 키키)</h4></span>
+		<span><img src="image/나우시카.jpg"><h3>나 우 시 카</h3><h4>(in 바람계곡의 나우시카)</h4></span>
+		<span><img src="image/토토로.jpg"><h3>토 토 로</h3><h4>(in 이웃집 토토로)</h4></span>
+		</div>
+		<br><br><br><br><br><div id="site"><br><br><br>
 		<center><h1>스튜디오지브리 관련 사이트</h1></center><br><br>
-		<section name="sites">
 		<ul>
 			<li>
 				<h3>스튜디오 지브리 홈페이지</h3>
@@ -348,8 +365,8 @@ section li{
 				<a href="http://www.disney.co.jp/studio/ghibli.html" target="_blank">http://www.disney.co.jp/studio/ghibli.html</a>
 			</li>
 		</ul>
-		</section>
-		<br><br><br><br><br><div id="question"></div><br><br><br>
+		</div>
+		<br><br><br><br><br><div id="question"><br><br><br>
 		<center><h1>문의사항</h1></center><br><br>
 		<form>
 			<h3>이름:<br><input type="text" name="name" class="input" required><br><br>
@@ -361,9 +378,8 @@ section li{
 			<button type="submit" style="font-size:15px;">제출하기</button>
 			<button type="reset" style="font-size:15px;">다시쓰기</button>
 		</form>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-		<div style="position: bottom; background-color: grey;">
+		</div> 
+		<div style="margin-top: 300px; position: bottom; background-color: grey;">
 			<br>
 			<center>
 				<font color="black">Name : Jeong Hyun Ki<br>
