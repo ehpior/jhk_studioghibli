@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
-		<title>STUDIO GHIBLI</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<title>STUDIO GHIBLI</title>
 <style>
 body{
 	background-color:black;
@@ -76,6 +77,14 @@ nav li a:hover{
 	font-family: 'Jua', sans-serif;
 	text-align: center;
 }
+#words span{
+    background-color : #111;
+    display: inline-block;
+    width: 30%;
+    height: 400px;
+    margin: 0px 0px 50px 23px;
+    clear:left;
+}
 #character img{
 	width: 100%;
 	height: 230px;
@@ -120,313 +129,489 @@ h4 {
 }
 </style>
 	</head>
-	<body text="white">
-		<img id="main" style="padding-top: 50px" src="main_background2.png" width="100%">
-		<nav>
-			<ul>
-				<li><a href="#main" style="padding:15px 15px;"><img src="home.png" height="22px"></a></li>
-				<li><a href="#overview">개&nbsp;&nbsp;요</a></th>
-				<li><a href="#movie">작&nbsp;&nbsp;품</a></th>
-				<li><a href="#character">캐 릭 터</a></th>
-				<li><a href="#site">관련 사이트</a></th>
-				<li><a href="#question">문&nbsp;&nbsp;의</a></th>
-			</ul>
-		</nav>
-		<br><br><br><br><br>
-		<div id = "overview"><br><br><br>
-		<table border="1" style="border-color: white; margin: auto;" width="60%">
-			<caption><h1>스튜디오 지브리의 개요</h1><br></caption>
-			<tr>
-				<th colspan ="2" style="text-align: center;">(주) 스튜디오 지브리<br>STUDIO GHIBLI INC.</th>
-			</tr>
-			<tr>
-				<th>설 립</th>
-				<td>1985년 6월</td>
-			</tr>
-			<tr>
-				<th>위 치</th>
-				<td>일본 도쿄도 고가네이 시</td>
-			</tr>
-			<tr>
-				<th rowspan="3">대 표</th>
-				<td>회장 호시노 코우지</td>
-			</tr>
-			<tr>
-				<td>사장 나카지마 키요후미</td>
-			</tr>
-			<tr>
-				<td>프로듀서 스즈키 토시오</td>
-			</tr>
-			<tr>
-				<th>내 용</th>
-				<td style="padding-left: 0px;">
-					<ul>
-						<li>애니메이션 영화, TV, 다큐멘터리 등의 기획 및 제작</li>
-						<li>애니메이션의 각종 캐릭터 상품화</li>
-						<li>출판물의 기획, 편집, 제작</li>
-						<li>음악 저작권 관리 및 양수</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
-		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<div id="movie"><br><br><br>
-		<center><h1>스튜디오 지브리의 대표 작품</h1>
-			<h3>(영화이름 Click!)</h3></center>
-		<br>
-		<details>
-			<summary><span>마루 밑 아리에티 (The Borrowers, 2010)</span></summary>
-			<br><img src="image/ariety.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>마루 밑 아리에티<br>( The Borrowers, 2010 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★☆ 8.11</td>
-				<tr><th>감독</th>
-					<td>요네바야시 히로마사</td></tr>
-				<tr><th>개요</th>
-					<td>애니메이션, 판타지</td></tr>
-				<tr><th>개봉일</th>
-					<td>2010. 09. 09.</td></tr>
-				<tr><th>상영시간</th>
-					<td>94 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>소인족과 인간은 다르지만 그들은 전부 
-						자신만의 방식으로 열심히 살아가고 있다는 
-						메시지를 담고 있는 애니메이션이다.</td></tr>
-			</table>
-		</details>
-		<details>
-			<summary><span>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</span></summary>
-			<br><img src="image/ponyo.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>벼랑 위의 포뇨<br>( Ponyo On the Cliff, 2008 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★☆ 8.19</td></tr>
-				<tr><th>감독</th>
-					<td>미야자키 하야오</td></tr>
-				<tr><th>개요</th>
-					<td>모험, 가족, 애니메이션</td></tr>
-				<tr><th>개봉일</th>
-					<td>2008. 12. 17.</td></tr>
-				<tr><th>상영시간</th>
-					<td>100 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>바닷가 마을을 배경으로, 인간이 되고 
-						싶어하는 소원을 가진 꼬마 물고기 포뇨와 
-						5살박이 소년 소스케와의 만남을 주제로 
-						하는 애니메이션이다.</td></tr>
-			</table>
-		</details>
-		<details>
-			<summary><span>하울의 움직이는 성 (Howl's Moving Castle, 2004)</span></summary>
-			<br><img src="image/howl.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>하울의 움직이는 성<br>( Howl's Moving Castle, 2004 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★★ 9.34</td></tr>
-				<tr><th>감독</th>
-					<td>미야자키 하야오</td></tr>
-				<tr><th>개요</th>
-					<td>애니메이션, 판타지</td></tr>
-				<tr><th>개봉일</th>
-					<td>2004. 12. 23.</td></tr>
-				<tr><th>상영시간</th>
-					<td>119 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>19세기 말, 마법과 과학이 공존하고 있는 
-						유럽의 앵거리 마을을 무대로 삼아, 마녀의
-						저주로 인해 90세 노인이 된 18세 소녀
-						소피를 통해 진정한 인생과 사랑의 의미를
-						전하는 애니메이션이다.</td></tr>
-			</table>
-		</details>
-		<details>
-			<summary><span>고양이의 보은 (The Cat Returns, 2002)</span></summary>
-			<br><img src="image/cat.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>고양이의 보은<br>( The Cat Returns, 2002 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★☆ 8.62</tr>
-				<tr><th>감독</th>
-					<td>모리타 히로유키</td></tr>
-				<tr><th>개요</th>
-					<td>애니메이션, 모험, 판타지, 가족</td></tr>
-				<tr><th>개봉일</th>
-					<td>2003. 08. 08.</td></tr>
-				<tr><th>상영시간</th>
-					<td>75 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>어느 날 위기에 처한 고양이를 도와준 하루,
-						그 고양이는 고양이 왕국의 왕자님이었다.
-						이 사실을 안 왕은 하루를 왕자의 신부로
-						강제로 맞이하려 하지만, 이 위기를
-						벗어나기 위해 노력하는 하루의 고군분투를
-						그린 애니메이션이다.</td></tr>
-			</table>
-		</details>
-		<details>
-			<summary><span>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</span></summary>
-			<br><img src="image/chihiro.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>센과 치히로의 행방불명<br>( The Spiriting Away Of Sen And Chihiro, 2001 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★★ 9.58</td>
-				<tr><th>감독</th>
-					<td>미야자키 하야오</td></tr>
-				<tr><th>개요</th>
-					<td>애니메이션, 판타지, 모험, 가족</td></tr>
-				<tr><th>개봉일</th>
-					<td>2002. 06. 28.</td></tr>
-				<tr><th>상영시간</th>
-					<td>126 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>일본의 온갖 정령들이 모여드는 온천장을
-						배경으로 소녀 치히로의 모험기를
-						다룬 애니메이션이다.</td></tr>
-			</table>
-		</details>
-		<details>
-			<summary><span>이웃집 토토로 (My Neighbor Totoro, 1988)</span></summary>
-			<br><img src="image/totoro.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>이웃집 토토로<br>( My Neighbor Totoro, 1988 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★★ 9.23</td></tr>
-				<tr><th>감독</th>
-					<td>미야자키 하야오</td></tr>
-				<tr><th>개요</th>
-					<td>애니메이션, 가족, 판타지</td></tr>
-				<tr><th>개봉일</th>
-					<td>2001. 07. 28.</td></tr>
-				<tr><th>상영시간</th>
-					<td>87 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>시골 마을로 이사 온 자매와 신비로운
-						숲의 정령 토토로의 만남을 따뜻하고
-						아름답게 그린 애니메이션이다.</td></tr>
-			</table>
-		</details>
-		<details>
-			<summary><span>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</span></summary>
-			<br><img src="image/laputa.jpg">
-			<table>
-				<tr><th>제목</th>
-					<td>천공의 성 라퓨타<br>( Laputa: Castle In the Sky, 1986 )</td></tr>
-				<tr><th>평점</th>
-					<td>★★★★★ 9.31</td>
-				<tr><th>감독</th>
-					<td>미야자키 하야오</td></tr>
-				<tr><th>개요</th>
-					<td>애니메이션, 판타지, 모험</td></tr>
-				<tr><th>개봉일</th>
-					<td>2004. 04. 30</td></tr>
-				<tr><th>상영시간</th>
-					<td>124 분</td></tr>
-				<tr><th>등급</th>
-					<td>전체 관람가</td></tr>
-				<tr><th>줄거리</th>
-					<td>하늘을 날아다니는 성 라퓨타 제국과
-						그 성을 날아다닐 수 있게 하는 전설의
-						비행석을 둘러싼 모험을 그린
-						애니메이션이다.</td></tr>
-			</table>
-		</details>
-		</div>
-		<br><br><br><br><br><br><br><br><br><div id="character"><br><br><br>
-		<center><h1>스튜디오 지브리의 대표 캐릭터</h1></center><br><br>
-		<span><img src="image/아리에티.jpg"><h3>아 리 에 티</h3><h4>(in 마루 밑 아리에티)</h4></span>
-		<span><img src="image/시즈쿠.jpg"><h3>시 즈 쿠</h3><h4>(in 귀를 기울이면)</h4></span>
-		<span><img src="image/카자마슌.jpg"><h3>카 자 마&nbsp; 슌</h3><h4>(in 코쿠리코 언덕에서)</h4></span>
-		<span><img src="image/유바바.jpg"><h3>유 바 바</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span><img src="image/소스케.jpg"><h3>소 스 케</h3><h4>(in 벼랑 위의 포뇨)</h4></span>
-		<span><img src="image/메이.jpg"><h3>메 이</h3><h4>(in 이웃집 토토로)</h4></span>
-		<span><img src="image/바론남작.jpg"><h3>바 론&nbsp; 남 작</h3><h4>(in 고양이의 보은)</h4></span>
-		<span><img src="image/아시타카.jpg"><h3>아 시 타 카</h3><h4>(in 모노노케 히메)</h4></span>
-		<span><img src="image/가오나시.jpg"><h3>가 오 나 시</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span><img src="image/소피.jpg"><h3>소 피</h3><h4>(in 하울의 움직이는 성)</h4></span>
-		<span><img src="image/산.jpg"><h3>산</h3><h4>(in 모노노케 히메)</h4></span>
-		<span><img src="image/포르코롯소.jpg"><h3>포 르 코&nbsp; 롯 소</h3><h4>(in 붉은 돼지)</h4></span>
-		<span><img src="image/파즈.jpg"><h3>파 즈</h3><h4>(in 천공의 성 라퓨타)</h4></span>
-		<span><img src="image/하울.jpg"><h3>하 울</h3><h4>(in 하울의 움직이는 성)</h4></span>
-		<span><img src="image/포뇨.jpg"><h3>포 뇨</h3><h4>(in 벼랑 위의 포뇨)</h4></span>
-		<span><img src="image/센.jpg"><h3>센 (치 히 로)</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span><img src="image/하쿠.jpg"><h3>하 쿠</h3><h4>(in 센과 치히로의 행방불명)</h4></span>
-		<span><img src="image/키키.jpg"><h3>키 키</h3><h4>(in 마녀 배달부 키키)</h4></span>
-		<span><img src="image/나우시카.jpg"><h3>나 우 시 카</h3><h4>(in 바람계곡의 나우시카)</h4></span>
-		<span><img src="image/토토로.jpg"><h3>토 토 로</h3><h4>(in 이웃집 토토로)</h4></span>
-		</div>
-		<br><br><br><br><br><div id="site"><br><br><br>
-		<center><h1>스튜디오지브리 관련 사이트</h1></center><br><br>
-		<ul>
-			<li>
-				<h3>스튜디오 지브리 홈페이지</h3>
-				<h5>스튜디오 지브리의 정식 일본 홈페이지입니다.</h5>
-				<a href="http://www.ghibli.jp" target="_blank">http://www.ghibli.jp</a>
-			</li>
-			<li>
-				<h3>지브리 미술관 라이브러리</h3>
-				<h5>지브리 미술관에서 타카하타 감독, 미야자키 감독이 추천하는 세계의 애니메이션 작품을 소개하고 있습니다.</h5>
-				<a href="http://www.ghibli-museum.jp/library/" target="_blank">http://www.ghibli-museum.jp/library/</a>
-			</li>
-			<li>
-				<h3>스튜디오x마루베니 신전력 제휴 특설 사이트</h3>
-				<h5>스튜디오 지브리와 협력하고 있는 마루베니 새로운 전력 주식회사의 공식 사이트입니다.</h5>
-				<a href="https://denki.marubeni.co.jp/" target="_blank">https://denki.marubeni.co.jp/</a>
-			</li>
-			<li>
-				<h3>스튜디오 지브리 in 로손</h3>
-				<h5>로손이 운영하는 지브리 관련 정보 사이트입니다.</h5>
-				<a href="http://www.lawson.co.jp/ghibli/" target="_blank">http://www.lawson.co.jp/ghibli/</a>
-			</li>
-			<li>
-				<h3>스튜디오 지브리의 블루레이 및 DVD</h3>
-				<h5>발매중인 DVD의 정보는 여기서 확인합니다.</h5>
-				<a href="http://www.disney.co.jp/studio/ghibli.html" target="_blank">http://www.disney.co.jp/studio/ghibli.html</a>
-			</li>
-		</ul>
-		</div>
-		<br><br><br><br><br><div id="question"><br><br><br>
-		<center><h1>문의사항</h1></center><br><br>
-		<form>
-			<h3>이름:<br><input type="text" name="name" class="input" required><br><br>
-			이메일 주소: <br><input type="email" name="email" class="input" required><br><br>
-			문의사항: </h3><h4><input type="radio" name="about" name="qna"> 기능개선요구
-			<br><input type="radio" name="qna"> 지브리관련문의
-			<br><input type="radio" name="qna"> 기타문의사항</h4>
-			<h3>문의내용:</h3><textarea name = "text" rows="7" class="input"></textarea><br><br>
-			<button type="submit" style="font-size:15px;">제출하기</button>
-			<button type="reset" style="font-size:15px;">다시쓰기</button>
-		</form>
-		</div> 
-		<div style="margin-top: 300px; position: bottom; background-color: grey;">
-			<br>
-			<center>
-				<font color="black">Name : Jeong Hyun Ki<br>
-				ID-Number : 20133162<br>
-				Major : Electrical Engineering<br>
-				E-mail : gusrl0101@naver.com<br>
-				Class : Web Client Computing<br></font>
-			</center>
-			<br>
-		</div>
-	</body>
+    <body text="white">
+        <div style="width:100%;">
+            <button type="button"><img id="main_right" style="position:absolute; padding-top:25%; padding-left:85%" src="right.png" height="50px"></button>
+            <button type="button"><img id="main_left" style="position:absolute; padding-top:25%; padding-left:7%" src="left.png" height="50px"></button>
+            <img id="main" style="padding-top: 30px;" src="main_background1.png" width="100%">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#main" style="padding:15px 15px;"><img src="home.png" height="22px"></a></li>
+                <li><a href="#overview">개&nbsp;&nbsp;요</a></th>
+                <li><a href="#movie">작&nbsp;&nbsp;품</a></th>
+                <li><a href="#character">캐 릭 터</a></th>
+                <li><a href="#site">관련 사이트</a></th>
+                <li><a href="#question">문&nbsp;&nbsp;의</a></th>
+                <li style="float:right; padding-top:18px; padding-right:10px;" id="now"></li>
+            </ul>
+        </nav>
+        <br><br>
+        <div id="overview">
+            <br><br><br>
+            <table border="1" style="border-color: white; margin: auto;" width="60%">
+                <caption><h1>스튜디오 지브리의 개요</h1><br></caption>
+                <tr>
+                    <th colspan="2" style="text-align: center;">(주) 스튜디오 지브리<br>STUDIO GHIBLI INC.</th>
+                </tr>
+                <tr>
+                    <th>설 립</th>
+                    <td>1985년 6월</td>
+                </tr>
+                <tr>
+                    <th>위 치</th>
+                    <td>일본 도쿄도 고가네이 시</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">대 표</th>
+                    <td>회장 호시노 코우지</td>
+                </tr>
+                <tr>
+                    <td>사장 나카지마 키요후미</td>
+                </tr>
+                <tr>
+                    <td>프로듀서 스즈키 토시오</td>
+                </tr>
+                <tr>
+                    <th>내 용</th>
+                    <td style="padding-left: 0px;">
+                        <ul>
+                            <li>애니메이션 영화, TV, 다큐멘터리 등의 기획 및 제작</li>
+                            <li>애니메이션의 각종 캐릭터 상품화</li>
+                            <li>출판물의 기획, 편집, 제작</li>
+                            <li>음악 저작권 관리 및 양수</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="movie">
+            <br><br><br>
+            <center>
+                <h1>스튜디오 지브리의 대표 작품</h1>
+                <h3>(영화이름 Click!)</h3>
+            </center>
+            <br>
+            <details>
+                <summary><span>마루 밑 아리에티 (The Borrowers, 2010)</span></summary>
+                <br><img src="image/ariety.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>마루 밑 아리에티<br>( The Borrowers, 2010 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★☆ 8.11</td>
+                    <tr>
+                        <th>감독</th>
+                        <td>요네바야시 히로마사</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>애니메이션, 판타지</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2010. 09. 09.</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>94 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            소인족과 인간은 다르지만 그들은 전부
+                            자신만의 방식으로 열심히 살아가고 있다는
+                            메시지를 담고 있는 애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+            <details>
+                <summary><span>벼랑 위의 포뇨 (Ponyo On the Cliff, 2008)</span></summary>
+                <br><img src="image/ponyo.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>벼랑 위의 포뇨<br>( Ponyo On the Cliff, 2008 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★☆ 8.19</td>
+                    </tr>
+                    <tr>
+                        <th>감독</th>
+                        <td>미야자키 하야오</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>모험, 가족, 애니메이션</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2008. 12. 17.</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>100 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            바닷가 마을을 배경으로, 인간이 되고
+                            싶어하는 소원을 가진 꼬마 물고기 포뇨와
+                            5살박이 소년 소스케와의 만남을 주제로
+                            하는 애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+            <details>
+                <summary><span>하울의 움직이는 성 (Howl's Moving Castle, 2004)</span></summary>
+                <br><img src="image/howl.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>하울의 움직이는 성<br>( Howl's Moving Castle, 2004 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★★ 9.34</td>
+                    </tr>
+                    <tr>
+                        <th>감독</th>
+                        <td>미야자키 하야오</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>애니메이션, 판타지</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2004. 12. 23.</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>119 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            19세기 말, 마법과 과학이 공존하고 있는
+                            유럽의 앵거리 마을을 무대로 삼아, 마녀의
+                            저주로 인해 90세 노인이 된 18세 소녀
+                            소피를 통해 진정한 인생과 사랑의 의미를
+                            전하는 애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+            <details>
+                <summary><span>고양이의 보은 (The Cat Returns, 2002)</span></summary>
+                <br><img src="image/cat.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>고양이의 보은<br>( The Cat Returns, 2002 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★☆ 8.62
+                    </tr>
+                    <tr>
+                        <th>감독</th>
+                        <td>모리타 히로유키</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>애니메이션, 모험, 판타지, 가족</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2003. 08. 08.</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>75 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            어느 날 위기에 처한 고양이를 도와준 하루,
+                            그 고양이는 고양이 왕국의 왕자님이었다.
+                            이 사실을 안 왕은 하루를 왕자의 신부로
+                            강제로 맞이하려 하지만, 이 위기를
+                            벗어나기 위해 노력하는 하루의 고군분투를
+                            그린 애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+            <details>
+                <summary><span>센과 치히로의 행방불명 (The Spriting Away Of Sen And Chihiro, 2001)</span></summary>
+                <br><img src="image/chihiro.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>센과 치히로의 행방불명<br>( The Spiriting Away Of Sen And Chihiro, 2001 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★★ 9.58</td>
+                    <tr>
+                        <th>감독</th>
+                        <td>미야자키 하야오</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>애니메이션, 판타지, 모험, 가족</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2002. 06. 28.</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>126 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            일본의 온갖 정령들이 모여드는 온천장을
+                            배경으로 소녀 치히로의 모험기를
+                            다룬 애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+            <details>
+                <summary><span>이웃집 토토로 (My Neighbor Totoro, 1988)</span></summary>
+                <br><img src="image/totoro.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>이웃집 토토로<br>( My Neighbor Totoro, 1988 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★★ 9.23</td>
+                    </tr>
+                    <tr>
+                        <th>감독</th>
+                        <td>미야자키 하야오</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>애니메이션, 가족, 판타지</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2001. 07. 28.</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>87 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            시골 마을로 이사 온 자매와 신비로운
+                            숲의 정령 토토로의 만남을 따뜻하고
+                            아름답게 그린 애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+            <details>
+                <summary><span>천공의 성 라퓨타 (Laputa: Castle In the Sky, 1986)</span></summary>
+                <br><img src="image/laputa.jpg">
+                <table>
+                    <tr>
+                        <th>제목</th>
+                        <td>천공의 성 라퓨타<br>( Laputa: Castle In the Sky, 1986 )</td>
+                    </tr>
+                    <tr>
+                        <th>평점</th>
+                        <td>★★★★★ 9.31</td>
+                    <tr>
+                        <th>감독</th>
+                        <td>미야자키 하야오</td>
+                    </tr>
+                    <tr>
+                        <th>개요</th>
+                        <td>애니메이션, 판타지, 모험</td>
+                    </tr>
+                    <tr>
+                        <th>개봉일</th>
+                        <td>2004. 04. 30</td>
+                    </tr>
+                    <tr>
+                        <th>상영시간</th>
+                        <td>124 분</td>
+                    </tr>
+                    <tr>
+                        <th>등급</th>
+                        <td>전체 관람가</td>
+                    </tr>
+                    <tr>
+                        <th>줄거리</th>
+                        <td>
+                            하늘을 날아다니는 성 라퓨타 제국과
+                            그 성을 날아다닐 수 있게 하는 전설의
+                            비행석을 둘러싼 모험을 그린
+                            애니메이션이다.
+                        </td>
+                    </tr>
+                </table>
+            </details>
+        </div>
+        <br><br><br><br><br><br><br>
+        <center>
+            <table id="words0" style="border:none;">
+                <tr>
+                    <td id="words_img" style="border:none;"><img src="image/1.jpg"></td>
+                    <td id="words_content" style="border:none;"><h3><마루 밑 아리에티><br><br>너는 나에게 심장의 일부분과 같은 존재야, 잊지않아 영원히.</h3></td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <table id="words1" style="border:none;">
+                <tr>
+                    <td id="words_img" style="border:none;"><img src="image/2.jpg"></td>
+                    <td id="words_content" style="border:none;"><h3><벼랑 위의 포뇨><br><br>포뇨, 소스케 좋아 !</h3></td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <table id="words2" style="border:none;">
+                <tr>
+                    <td id="words_img" style="border:none;"><img src="image/3.jpg"></td>
+                    <td id="words_content" style="border:none;"><h3><하울의 움직이는 성><br><br>난 이미 충분히 도망쳤어. 이제야 지켜야만 하는 것이 생겼어.. 너야.</h3></td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <table id="words3" style="border:none;">
+                <tr>
+                    <td id="words_img" style="border:none;"><img src="image/4.jpg"></td>
+                    <td id="words_content" style="border:none;"><h3><고양이의 보은><br><br>고양이를 도운 것도, 일이 꼬인것도 모두 나의 소중한 시간 이었어.</h3></td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <table id="words4" style="border:none;">
+                <tr>
+                    <td id="words_img" style="border:none;"><img src="image/5.jpg"></td>
+                    <td id="words_content" style="border:none;"><h3><센과 치히로의 행방불명><br><br>치히로, 고마워. 진짜 내 이름은 니기하야미 코하쿠누시야.</h3></td>
+                </tr>
+            </table>
+        </center>
+        <br><br><br><br><br><br><div id="character">
+            <br><br><br>
+            <center><h1>스튜디오 지브리의 대표 캐릭터</h1></center>
+            <center><h3>(캐릭터 Click!)</h3></center><br><br>
+            <span><img src="image/아리에티1.jpg" id="img0"><h3>아 리 에 티</h3><h4>(마루 밑 아리에티)</h4></span>
+            <span><img src="image/유바바1.jpg" id="img1"><h3>유 바 바</h3><h4>(센과 치히로의 행방불명)</h4></span>
+            <span><img src="image/소스케1.jpg" id="img2"><h3>소 스 케</h3><h4>(벼랑 위의 포뇨)</h4></span>
+            <span><img src="image/메이1.jpg" id="img3"><h3>메 이</h3><h4>(이웃집 토토로)</h4></span>
+            <span><img src="image/가오나시1.jpg" id="img4"><h3>가 오 나 시</h3><h4>(센과 치히로의 행방불명)</h4></span>
+            <span><img src="image/소피1.jpg" id="img5"><h3>소 피</h3><h4>(하울의 움직이는 성)</h4></span>
+            <span><img src="image/하울1.jpg" id="img6"><h3>하 울</h3><h4>(하울의 움직이는 성)</h4></span>
+            <span><img src="image/포뇨1.jpg" id="img7"><h3>포 뇨</h3><h4>(벼랑 위의 포뇨)</h4></span>
+            <span><img src="image/센1.jpg" id="img8"><h3>센 (치 히 로)</h3><h4>(센과 치히로의 행방불명)</h4></span>
+            <span><img src="image/하쿠1.jpg" id="img9"><h3>하 쿠</h3><h4>(센과 치히로의 행방불명)</h4></span>
+            <span><img src="image/키키1.jpg" id="img10"><h3>키 키</h3><h4>(마녀 배달부 키키)</h4></span>
+            <span><img src="image/토토로1.jpg" id="img11"><h3>토 토 로</h3><h4>(이웃집 토토로)</h4></span>
+        </div>
+        <br><br><br><br><br><div id="site">
+            <br><br><br>
+            <center><h1>스튜디오지브리 관련 사이트</h1></center><br><br>
+            <ul>
+                <li>
+                    <h3>스튜디오 지브리 홈페이지</h3>
+                    <h5>스튜디오 지브리의 정식 일본 홈페이지입니다.</h5>
+                    <a href="http://www.ghibli.jp" target="_blank">http://www.ghibli.jp</a>
+                </li>
+                <li>
+                    <h3>지브리 미술관 라이브러리</h3>
+                    <h5>지브리 미술관에서 타카하타 감독, 미야자키 감독이 추천하는 세계의 애니메이션 작품을 소개하고 있습니다.</h5>
+                    <a href="http://www.ghibli-museum.jp/library/" target="_blank">http://www.ghibli-museum.jp/library/</a>
+                </li>
+                <li>
+                    <h3>스튜디오x마루베니 신전력 제휴 특설 사이트</h3>
+                    <h5>스튜디오 지브리와 협력하고 있는 마루베니 새로운 전력 주식회사의 공식 사이트입니다.</h5>
+                    <a href="https://denki.marubeni.co.jp/" target="_blank">https://denki.marubeni.co.jp/</a>
+                </li>
+                <li>
+                    <h3>스튜디오 지브리 in 로손</h3>
+                    <h5>로손이 운영하는 지브리 관련 정보 사이트입니다.</h5>
+                    <a href="http://www.lawson.co.jp/ghibli/" target="_blank">http://www.lawson.co.jp/ghibli/</a>
+                </li>
+                <li>
+                    <h3>스튜디오 지브리의 블루레이 및 DVD</h3>
+                    <h5>발매중인 DVD의 정보는 여기서 확인합니다.</h5>
+                    <a href="http://www.disney.co.jp/studio/ghibli.html" target="_blank">http://www.disney.co.jp/studio/ghibli.html</a>
+                </li>
+            </ul>
+        </div>
+        <br><br><br><br><br><div id="question">
+            <br><br><br>
+            <center><h1>문의사항</h1></center><br><br>
+            <form>
+                <h3>
+                    이름:<br><input type="text" name="name" class="input" required><br><br>
+                    이메일 주소: <br><input type="email" name="email" class="input" required><br><br>
+                    문의사항:
+                </h3><h4>
+                    <input type="radio" name="about" name="qna"> 기능개선요구
+                    <br><input type="radio" name="qna"> 지브리관련문의
+                    <br><input type="radio" name="qna"> 기타문의사항
+                </h4>
+                <h3>문의내용:</h3><textarea name="text" rows="7" class="input"></textarea><br><br>
+                <button type="submit" style="font-size:15px;">제출하기</button>
+                <button type="reset" style="font-size:15px;">다시쓰기</button>
+            </form>
+        </div>
+        <div style="margin-top: 300px; position: bottom; background-color: grey;">
+            <br>
+            <center>
+                <font color="black">
+                    Name : Jeong Hyun Ki<br>
+                    ID-Number : 20133162<br>
+                    Major : Electrical Engineering<br>
+                    E-mail : gusrl0101@naver.com<br>
+                    Class : Web Client Computing<br>
+                </font>
+            </center>
+            <br>
+        </div>
+	<script type="text/javascript" src="asd.js"></script>
+    </body>
 </html>
