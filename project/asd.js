@@ -5,9 +5,8 @@ for(j=0 ; j<20 ; j++){
 }
 setInterval(function(){
 	var a = new Date();
-	$("#now").text("현재시각 : "+(a.getMonth()+1)+" 월 "+a.getDate()+" 일 "+a.getHours()+" 시 "+a.getMinutes()+" 분 "+a.getSeconds()+" 초");
-},1000);
-document.ready(function(){
+	$("#now").text("현재시각 : "+(a.getMonth()+1)+" 월 "+a.getDate()+" 일 "+a.getHours()+" 시 "+a.getMinutes()+" 분 "+a.getSeconds()+" 초");},1000);
+
 $("#main_right").click(function(){
 	if(main==0){
 		$('#main').attr("src","main_background2.jpg");
@@ -46,7 +45,6 @@ setInterval(function(){
 	time+=1;
 	if(time==5) time=0;
 	$("#words"+time).fadeToggle();},3300);
-
 
 $("#img0").click(function(){
 	if(i[0]==0){ 
@@ -167,4 +165,4 @@ $("#img11").click(function(){
 		$(this).attr("src","image/토토로1.jpg");
 		i[11]=0;
 	}
-});}
+});
