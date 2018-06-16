@@ -7,6 +7,7 @@ setInterval(function(){
 	var a = new Date();
 	$("#now").text("현재시각 : "+(a.getMonth()+1)+" 월 "+a.getDate()+" 일 "+a.getHours()+" 시 "+a.getMinutes()+" 분 "+a.getSeconds()+" 초");
 },1000);
+document.ready(function(){
 $("#main_right").click(function(){
 	if(main==0){
 		$('#main').attr("src","main_background2.jpg");
@@ -166,4 +167,4 @@ $("#img11").click(function(){
 		$(this).attr("src","image/토토로1.jpg");
 		i[11]=0;
 	}
-});
+});}
